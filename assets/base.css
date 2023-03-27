@@ -902,6 +902,7 @@ summary::-webkit-details-marker {
 /* component-title */
 .title,
 .title-wrapper-with-link {
+  font-weight: bold;
   margin: 3rem 0 2rem;
 }
 
@@ -2265,7 +2266,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 /* section-header */
 .section-header.shopify-section-group-header-group {
-  z-index: 3;
+  z-index: 4;
 }
 
 .shopify-section-header-sticky {
@@ -2321,7 +2322,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   }
 
   .header--middle-left {
-    grid-template-areas: "heading navigation icons";
+    grid-template-areas: "heading icons navigation";
     grid-template-columns: auto auto 1fr;
     column-gap: 2rem;
   }
