@@ -1,0 +1,165 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'announcement' -%}
+      <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+        {%- if block.settings.richtext != blank -%}
+          {%- if block.settings.link != blank -%}
+            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+          {%- endif -%}
+              <div class="page-width">
+                <div class="announcement-bar__message h5 display-flex">
+                  <div class="announcement-message display-flex">
+                    {% render 'icon-library', icon: block.settings.icon %}
+                    {{ block.settings.richtext }}
+                    {%- if block.settings.link != blank -%}
+                      {% render 'icon-arrow' %}
+                    {%- endif -%}
+                  </div>
+                  <div class="divider"></div>
+                  {%- if block.settings.need-help-text != blank -%}
+                  <div class="need-help">
+                      {{ block.settings.need-help-text }}
+                  </div>
+                  {%- endif -%}
+                  <div class="divider"></div>
+                  <div class="announcement-menu">
+                    <ul class="display-flex">
+                      <li>Contact Us</li>
+                      <li>FAQs </li>
+                      <li>News</li>
+                    </ul>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="display-flex">
+                    <div class="announcement-account display-flex">
+                      {%- if shop.customer_accounts_enabled -%}
+                        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+                          {% render 'icon-account' %}
+                          <span class="visually-hidden">
+                            {%- liquid
+                              if customer
+                                echo 'customer.account_fallback' | t
+                              else
+                                echo 'customer.log_in' | t
+                              endif
+                            -%}
+                          </span>
+                        </a>
+                        <p class="announcement-text">My Account</p>
+                      {%- endif -%}
+                    </div>
+                    <div class="announcement-cart display-flex">
+                      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+                        {%- liquid
+                          if cart == empty
+                            render 'icon-cart-empty'
+                          else
+                            render 'icon-cart'
+                          endif
+                        -%}
+                        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+                        {%- if cart != empty -%}
+                          <div class="cart-count-bubble">
+                            {%- if cart.item_count < 100 -%}
+                              <span aria-hidden="true">{{ cart.item_count }}</span>
+                            {%- endif -%}
+                            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+                          </div>
+                        {%- endif -%}
+                      </a>
+                      <p class="announcement-text">Cart</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          {%- if block.settings.link != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "t:sections.announcement-bar.name",
+  "max_blocks": 12,
+  "class": "announcement-bar-section",
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "icon-material-local-shipping",
+              "label": "Local Shipping"
+            },
+            {
+              "value": "icon-material-email",
+              "label": "Email"
+            }
+          ],
+          "default": "icon-material-local-shipping"
+        },
+        {
+          "type":"richtext",
+          "id": "richtext",
+          "default": "<p>Welcome to store<\/p>",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "accent-1",
+              "label": "t:sections.all.colors.accent_1.label"
+            },
+            {
+              "value": "accent-2",
+              "label": "t:sections.all.colors.accent_2.label"
+            },
+            {
+              "value": "background-1",
+              "label": "t:sections.all.colors.background_1.label"
+            },
+            {
+              "value": "background-2",
+              "label": "t:sections.all.colors.background_2.label"
+            },
+            {
+              "value": "inverse",
+              "label": "t:sections.all.colors.inverse.label"
+            }
+          ],
+          "default": "accent-1",
+          "label": "t:sections.all.colors.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        },
+        {
+          "type":"richtext",
+          "id": "need-help-text",
+          "default": "<p>Need Help? 513-868-9543<\/p>",
+          "label": "Need Help Text"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "announcement"
+      }
+    ]
+  }
+}
+{% endschema %}
