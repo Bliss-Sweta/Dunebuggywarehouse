@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/DBW_Logo_PNG_transparent.png",
+    "logo": "shopify://shop_images/DBW_Logo_PNG_transparent.png",
     "logo_width": 230,
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#ed9f06",
@@ -22,7 +22,7 @@
     "spacing_grid_horizontal": 28,
     "spacing_grid_vertical": 28,
     "buttons_border_thickness": 1,
-    "buttons_border_opacity": 100,
+    "buttons_border_opacity": 0,
     "buttons_radius": 0,
     "buttons_shadow_opacity": 0,
     "buttons_shadow_horizontal_offset": -2,
@@ -107,11 +107,11 @@
     "sale_badge_color_scheme": "accent-1",
     "sold_out_badge_color_scheme": "background-1",
     "accent_icons": "text",
-    "brand_headline": "<strong>Dune Buggy Warehouse<\/strong>",
-    "brand_description": "<p>2610 Bobmeyer Rd. <\/p><p>Hamilton, OH 45015<\/p>",
+    "brand_headline": "<strong>Dune Buggy Warehouse</strong>",
+    "brand_description": "<p>2610 Bobmeyer Rd. </p><p>Hamilton, OH 45015</p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/",
-    "social_instagram_link": "http:\/\/www.instagram.com\/",
+    "social_facebook_link": "https://www.facebook.com/",
+    "social_instagram_link": "http://www.instagram.com/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -141,9 +141,7 @@
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "presets": {
     "Default": {
@@ -168,7 +166,7 @@
       "spacing_grid_horizontal": 28,
       "spacing_grid_vertical": 28,
       "buttons_border_thickness": 1,
-      "buttons_border_opacity": 100,
+      "buttons_border_opacity": 0,
       "buttons_radius": 40,
       "buttons_shadow_opacity": 0,
       "buttons_shadow_horizontal_offset": 0,
@@ -254,7 +252,7 @@
       "sold_out_badge_color_scheme": "background-1",
       "accent_icons": "text",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
