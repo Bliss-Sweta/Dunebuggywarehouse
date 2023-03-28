@@ -108,3 +108,15 @@ header.page-width {
   width: 0;
 }
 /* START: Collection products home page */
+/* START : Collection List Section */
+.collection-list-title {
+  font-weight: bold;
+  color: #2097dc;
+}
+
+.collection-sub-title {
+  color: #6c6c6c;
+  font-weight: bold;
+  opacity: 1;
+}
+/* END : Collection List Section */
