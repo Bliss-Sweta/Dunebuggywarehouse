@@ -174,3 +174,18 @@ h2.logo-title.h2:before {
   padding: 0 1rem;
 }
 /* END : Logo List Container  */
+/*  */
+.multi-video {
+  display: flex;
+  gap: 50px;
+}
+.video-block {
+  width: 50%;
+  height: 50%;
+}
+.video-section .title,
+.video-description,
+.video-button {
+  text-align: center;
+}
+/*  */
