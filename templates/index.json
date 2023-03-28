@@ -6,7 +6,7 @@
         "0fb6e0cb-0ac9-410e-856a-25deb5fa8596": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_5_2x_5f3672dc-7ea7-4694-89b7-d44d810f8e2c.png",
+            "image": "shopify:\/\/shop_images\/Mask_Group_5_2x_5f3672dc-7ea7-4694-89b7-d44d810f8e2c.png",
             "heading": "",
             "heading_size": "h0",
             "subheading": "",
@@ -22,7 +22,9 @@
           }
         }
       },
-      "block_order": ["0fb6e0cb-0ac9-410e-856a-25deb5fa8596"],
+      "block_order": [
+        "0fb6e0cb-0ac9-410e-856a-25deb5fa8596"
+      ],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
@@ -107,7 +109,7 @@
         "template--18322003853617__d39ba4fd-8113-4295-8c95-4a07ac3d34b6-16796346142230f46b-0": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/new-arrivals-banner.png",
+            "image": "shopify:\/\/shop_images\/new-arrivals-banner.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -117,7 +119,7 @@
         "template--18322003853617__d39ba4fd-8113-4295-8c95-4a07ac3d34b6-16796346142230f46b-1": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mask_Group_6.png",
+            "image": "shopify:\/\/shop_images\/Mask_Group_6.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -152,36 +154,49 @@
         "logo-list-0": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Image_21.png",
             "link": ""
           }
         },
         "logo-list-1": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Image_22.png",
             "link": ""
           }
         },
         "logo-list-2": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Image_25.png",
             "link": ""
           }
         },
         "logo-list-3": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Image_23.png",
             "link": ""
           }
         },
         "logo-list-4": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Image_24.png",
             "link": ""
           }
         },
         "logo-list-5": {
           "type": "logo_image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Image_27.png",
+            "link": ""
+          }
+        },
+        "da2b318b-0c48-408f-b7d8-4ad99b4388f6": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_26.png",
             "link": ""
           }
         }
@@ -192,7 +207,8 @@
         "logo-list-2",
         "logo-list-3",
         "logo-list-4",
-        "logo-list-5"
+        "logo-list-5",
+        "da2b318b-0c48-408f-b7d8-4ad99b4388f6"
       ],
       "settings": {
         "title": "Our Brands",
