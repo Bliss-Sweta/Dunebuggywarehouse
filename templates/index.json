@@ -47,7 +47,7 @@
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
@@ -90,6 +90,7 @@
         "template--18322003853617__ff477513-d545-42ae-b340-4d3e91ffc343-167957967955332f9f-2"
       ],
       "settings": {
+        "prefix_title": "Shop by",
         "title": "CATEGORY",
         "heading_size": "h1",
         "image_ratio": "square",
