@@ -64,6 +64,7 @@
 /* START : Header Menu */
 .header__inline-menu {
   font-weight: bold;
+  letter-spacing: 0;
 }
 
 .section-bottom-border {
@@ -174,7 +175,7 @@ h2.logo-title.h2:before {
   padding: 0 1rem;
 }
 /* END : Logo List Container  */
-/*  */
+/* START : Multi column video section */
 .multi-video {
   display: flex;
   gap: 50px;
@@ -188,4 +189,19 @@ h2.logo-title.h2:before {
 .video-button {
   text-align: center;
 }
-/*  */
+/* END : Multi column video section  */
+/* START : Footer */
+.footer {
+  font-size: 14px;
+}
+.grid--4-col-tablet .grid__item {
+  width: 0px;
+}
+.footer-block__heading {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+.footer-block__details-content li {
+  line-height: 0;
+}
+/* END : Footer */
