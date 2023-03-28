@@ -131,3 +131,10 @@ svg.icon.icon-arrow {
   margin-left: 7px;
 }
 /* END : Collection List Section */
+/* START : Multicolumn */
+.multicolumn-card-spacing {
+  padding-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* END : Multicolumn */
