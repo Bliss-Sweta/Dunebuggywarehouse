@@ -116,11 +116,11 @@
                   {%- when 'social-icon' -%}
                   {%- if has_social_icons -%}
                     {%- render 'social-icons' -%}
-                    {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
-                {%- endif -%}
+                    {%- if block.settings.socialheading != blank -%}
+                      <h2 class="footer-block__heading">{{- block.settings.socialheading | escape -}}</h2>
+                    {%- endif -%}
                     <div class="footer-block__details-content rte">
-                      {{ block.settings.subtext }}
+                      {{ block.settings.socialsubtext }}
                     </div>
                   {%- endif -%}
                   {%- when 'image' -%}
@@ -398,13 +398,13 @@
       "settings": [
         {
           "type": "text",
-          "id": "heading",
+          "id": "socialheading",
           "default": "Heading",
           "label": "t:sections.footer.blocks.text.settings.heading.label"
         },
         {
           "type": "richtext",
-          "id": "subtext",
+          "id": "socialsubtext",
           "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
         }
