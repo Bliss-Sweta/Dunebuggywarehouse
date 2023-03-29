@@ -75,6 +75,9 @@
                   {%- when '@app' -%}
                     {% render block %}
                   {%- when 'text' -%}
+                   {%- if block.settings.show_social and has_social_icons -%}
+                        {%- render 'social-icons' -%}
+                      {%- endif -%}
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
                     </div>
