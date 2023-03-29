@@ -29,7 +29,11 @@
         {%- when 'paragraph' -%}
           <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'email_form' -%}
-          <div {{ block.shopify_attributes }}>
+          <div {{ block.shopify_attributes }} class="newsletter-container">
+            {% render 'icon-mail' %}
+            <h2 class="{{ block.settings.news_heading }}" {{ block.shopify_attributes }}>
+              {{ block.settings.news_heading | escape }}
+            </h2>
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
@@ -215,7 +219,15 @@
     {
       "type": "email_form",
       "name": "t:sections.newsletter.blocks.email_form.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "news_heading",
+          "default": "Sign Up Newsletter",
+          "label": "t:sections.newsletter.blocks.heading.settings.heading.label"
+        }
+      ]
     },
     {
       "type": "@app"

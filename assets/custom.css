@@ -190,6 +190,19 @@ h2.logo-title.h2:before {
   text-align: center;
 }
 /* END : Multi column video section  */
+/* START : Newsletter */
+.newsletter .newsletter-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.newsletter-container h2 {
+  margin-left: 22px;
+}
+.newsletter-container .newsletter-form {
+  margin: 14px;
+}
+/* END : Newsletter */
 /* START : Footer */
 .footer {
   font-size: 14px;
