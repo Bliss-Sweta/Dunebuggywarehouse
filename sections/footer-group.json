@@ -68,8 +68,16 @@
             "menu": "helpful-links"
           }
         },
+        "44e10bcb-6ebe-48ba-bb23-d4b86801f145": {
+          "type": "social-icon",
+          "settings": {
+            "socialheading": "ALWAYS LOOKING TO IMPROVE",
+            "socialsubtext": "<p>Tell us what you love or what we need to fix.<\/p>"
+          }
+        },
         "c704e4eb-22d4-4336-971b-84590b4c1809": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "heading": "ALWAYS LOOKING TO IMPROVE",
             "subtext": "<p>Tell us what you love or what we need to fix.<\/p>"
@@ -81,6 +89,7 @@
         "201117ab-23bc-42e4-b65c-c581fb0b60e5",
         "367dda55-33c7-4a2f-ba05-5e139b709f61",
         "43586dfc-3de3-4a9a-95ba-e969340f02b8",
+        "44e10bcb-6ebe-48ba-bb23-d4b86801f145",
         "c704e4eb-22d4-4336-971b-84590b4c1809"
       ],
       "settings": {
