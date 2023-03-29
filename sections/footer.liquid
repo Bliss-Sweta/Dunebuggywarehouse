@@ -115,6 +115,7 @@
                     </div>
                   {%- when 'social-icon' -%}
                   {%- if has_social_icons -%}
+                    <h2 class="footer-block__heading">Connect with</h2>
                     <div>
                     <ul class="footer__list-social list-unstyled list-social">
                       {%- if settings.social_facebook_link != blank -%}
@@ -123,7 +124,7 @@
                             {%- render 'icon-facebook' -%}
                             <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
                           </a>
-                        </li>aa
+                        </li>
                       {%- endif -%}
                       {%- if settings.social_instagram_link != blank -%}
                         <li class="list-social__item">
