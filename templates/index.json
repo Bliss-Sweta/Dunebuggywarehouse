@@ -38,7 +38,7 @@
     "featured-collection-0": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Featured product",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -244,6 +244,9 @@
       ],
       "settings": {
         "heading": "VW & Dune Buggy Tech Videos",
+        "show_view_all": true,
+        "button_label": "View All Tech Center",
+        "button_link": "",
         "heading_size": "h2",
         "color_scheme": "background-1",
         "padding_top": 36,
